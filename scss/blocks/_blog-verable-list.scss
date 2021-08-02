@@ -44,6 +44,13 @@
   }
 }
 
+@media only screen and (max-width: 805px) {
+  .vegitable-item__title{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
 @media only screen and (max-width: 380px) {
   .vegitable-item__img{
     margin-left: 15px;
