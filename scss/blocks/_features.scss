@@ -32,7 +32,6 @@
   margin-bottom: 10px;
 
   &:hover {
-    opacity: 0.7;
     cursor: pointer;
   }
 
@@ -58,8 +57,9 @@
   @include list-unstyled;
   position: absolute;
   width: 100px;
-  background-color: white;
-  border-radius: 5px;
+  background-color: #8eca53;
+  color: #ffffff;
+  border-radius: 2px;
   padding: 10px;
   display: none;
 }
