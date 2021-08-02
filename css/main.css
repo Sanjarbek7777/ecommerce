@@ -1950,9 +1950,18 @@ img {
   }
 }
 
+@media only screen and (max-width: 440px) {
+  .blog-vegitable {
+    min-width: 269px;
+  }
+  .blog-vegitable__img {
+    min-width: 269px;
+  }
+}
+
 @media only screen and (max-width: 380px) {
   .blog-vegitable {
-    width: 100%;
+    min-width: 269px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -1963,7 +1972,7 @@ img {
     text-align: center;
   }
   .blog-vegitable__img {
-    width: 100%;
+    min-width: 269px;
     margin-left: auto;
     margin-right: auto;
   }
