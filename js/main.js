@@ -1,4 +1,4 @@
-var elSiteFormSection = document.querySelector(".form");
+var elSiteFormSection = document.querySelector(".forms");
 var elSiteFormToggle = elSiteFormSection.querySelector(".form-wrapper__toggler");
 
 if( elSiteFormToggle){
@@ -6,3 +6,4 @@ if( elSiteFormToggle){
     elSiteFormSection.classList.toggle("form-open");
   });
 }
+

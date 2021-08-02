@@ -20,20 +20,21 @@
   position: absolute;
   z-index: 10;
   width: 300px;
-  height: 300px;
-  background-color: rgb(20, 20, 20);
+  height: 600px;
+  background-color: #f9f9f9;
   right: 20px;
-  top: 90px;
+  top: 130px;
   padding: 20px
 }
 
 .form-wrapper__list{
   @include list-unstyled;
   text-align: center;
+  padding-top: 15px;
 }
 
 .form-wrapper__item:not(:last-child){
-  margin-bottom: 12px;
+  margin-bottom: 22px;
 }
 
 .form-wrapper__link{
