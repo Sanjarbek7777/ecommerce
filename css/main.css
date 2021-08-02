@@ -1786,6 +1786,10 @@ img {
   margin-bottom: 8px;
 }
 
+.blog-wrapper__title:hover {
+  cursor: pointer;
+}
+
 .blog-wrapper__author {
   font-size: 12px;
   line-height: 16px;
@@ -1895,6 +1899,10 @@ img {
   margin-bottom: 16px;
 }
 
+.blog-vegitable__title:hover {
+  cursor: pointer;
+}
+
 .blog-vegitable__author {
   font-size: 12px;
   line-height: 16px;
@@ -1991,6 +1999,10 @@ img {
   line-height: 22px;
   color: #151515;
   margin-bottom: 16px;
+}
+
+.vegitable-item__title:hover {
+  cursor: pointer;
 }
 
 .vrgitable-item__author {

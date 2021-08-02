@@ -39,6 +39,10 @@
   width: 380px;
   padding-top: 228px;
   margin-bottom: 8px;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .blog-wrapper__author {

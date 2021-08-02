@@ -19,6 +19,10 @@
   line-height: 22px;
   color: #151515;
   margin-bottom: 16px;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .vrgitable-item__author{

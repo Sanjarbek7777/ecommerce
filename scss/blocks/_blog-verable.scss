@@ -33,6 +33,10 @@
   line-height: 27px;
   color: #151515;
   margin-bottom: 16px;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .blog-vegitable__author{
