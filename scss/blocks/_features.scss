@@ -26,6 +26,10 @@
   white-space: nowrap;
 }
 
+.features-item__link{
+  text-decoration: none;
+}
+
 .features-item {
   position: relative;
   transition: opacity 0.3s ease;

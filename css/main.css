@@ -567,6 +567,10 @@ img {
   white-space: nowrap;
 }
 
+.features-item__link {
+  text-decoration: none;
+}
+
 .features-item {
   position: relative;
   -webkit-transition: opacity 0.3s ease;
