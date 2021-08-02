@@ -68,7 +68,7 @@
     display: block;
     width: 10px;
     height: 10px;
-    background-image: url(../../img/Vector.svg);
+    background-image: url(../../img/icon-left.svg);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: contain;
@@ -156,7 +156,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  
+
   .content-wrapper{
     max-width: 713px;
     padding: 58px 206px 32px 33px;
@@ -200,7 +200,7 @@
 }
 
 @media only screen and (max-width: 375px) {
-    
+
   .content-text {
     font-size: 11px;
     white-space: nowrap;

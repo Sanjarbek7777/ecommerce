@@ -5,6 +5,16 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.wrapper-text{
+  font-family: "Poppins";
+  @include title-unstyled;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
 }
 
 .wrapper-button {
@@ -15,6 +25,20 @@
   font-size: 15px;
   line-height: 22px;
   color: #151515;
+  display: flex;
+  align-items: center;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../../img/icon-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 13px;
+  }
 }
 
 .blog-wrapper {

@@ -54,10 +54,29 @@
 }
 
 .prodact-content__button {
+  font-family: "Poppins";
   padding: 12px 16px;
   background-color: #f5f5f5;
   border-radius: 5px;
   border: transparent;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  display: flex;
+  align-items: center;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../../img/icon-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 13px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
