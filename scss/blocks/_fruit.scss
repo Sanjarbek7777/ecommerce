@@ -1,0 +1,122 @@
+.features{
+  margin-bottom: 50px;
+}
+
+.friut-text{
+  @include title-unstyled;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.fruit-text__span{
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+}
+
+.fruit-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.fruit-wrapper__title{
+  font-family: "Poppins";
+  @include title-unstyled;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #151515;
+}
+
+.fruit-wrapper__list{
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.fruit-wrapper__item:not(:last-child){
+  margin-right: 25px;
+}
+
+.fruit-wrapper__link{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+  text-decoration: none;
+}
+
+.link-grid{
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
+
+  &::before{
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url(../../img/ic-layout-square-grid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 5px;
+  }
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+.link-products{
+  display: flex;
+  align-items: center;
+  color: #A9A9A9;
+
+
+  &::before{
+    content: "117";
+    background-color: #F4F8EC;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6A983C;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 4px;
+  }
+}
+
+.link-list{
+  display: flex;
+  align-items: center;
+  color: #A9A9A9;
+
+  &::before{
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url(../../img/ic-layout-sections.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 663px) {
+  .fruit-wrapper__title{
+    margin-bottom: 10px;
+  }
+
+  .fruit-wrapper{
+    flex-direction: column;
+  }
+}
