@@ -283,8 +283,62 @@
             </li>
           </ul>
         </div>
+
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="form__wrapper">
+                <label class="form__label" for="text">
+                  <input class="form__input input-left visually-hidden" type="radio" name="filtre" value="text" id="text" aria-label="filtre text">
+                  <span class="form__span">Filtre text</span>
+                </label>
+
+                <label class="form__label" for="filtre">
+                  <input class="form__input input-right visually-hidden" type="radio" name="filtre" value="text" id="filtre" aria-label="filtre text">
+                  <span class="form__span">Filtre text</span>
+                </label>
+              </div>
+
+              <div class="check-wrapper">
+                <label class="check-wrapper__label" for="check-one">
+                  <input class="check-wrapper__check visually-hidden" type="checkbox" name="filtre" id="check-one" aria-label="filtre">
+                  <span class="check-wrapper__span">Filtre</span>
+                  <span class="check-wrapper__span-nbm">Nbm</span>
+                </label>
+              </div>
+
+              <div class="check-wrapper">
+                <label class="check-wrapper__label" for="check-two">
+                  <input class="check-wrapper__check visually-hidden" type="checkbox" name="filtre" id="check-two" aria-label="filtre">
+                  <span class="check-wrapper__span">Filtre</span>
+                  <span class="check-wrapper__span-nbm">Nbm</span>
+                </label>
+              </div>
+
+              <div class="select">
+                <label class="select__label" for="check-select">
+                  <input class="select__input visually-hidden" type="checkbox" name="filtre" id="check-select">
+                  <span class="select__span">Filtre</span>
+                  <span class="select__number">12</span>
+                </label>
+
+                <select class="select__select" name="select">
+                  <option value="selected" selected>Select</option>
+                  <option value="selected">one</option>
+                  <option value="selected">two</option>
+                  <option value="selected">three</option>
+                </select>
+              </div>
+
+        </form>
+
+        <div class="applied">
+          <p class="applied__text">Applied filtres:</p>
+          <p class="applied__green">Selected Filtre</p>
+          <p class="applied__green">Selected Filtre</p>
+        </div>
       </div>
     </section>
+
+
 
   </main>
 
