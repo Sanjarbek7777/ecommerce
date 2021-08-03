@@ -605,7 +605,7 @@ img {
   list-style: none;
   position: absolute;
   width: 100px;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   background-color: #8eca53;
   color: #ffffff;
@@ -2575,7 +2575,7 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-  text-align: center;
+  text-align: left;
   padding-top: 15px;
 }
 
