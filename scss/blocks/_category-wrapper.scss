@@ -2,6 +2,7 @@
   @include list-unstyled;
   display: flex;
   flex-direction: row;
+  flex-grow: 1;
 }
 
 .category-wrapper{
@@ -22,6 +23,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  flex-grow: 1;
 }
 
 .content-text{

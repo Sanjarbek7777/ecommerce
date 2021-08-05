@@ -12,6 +12,7 @@
 
 .prodact-list {
   display: flex;
+  flex-grow: 1;
   // margin-left: 33px;
 }
 
@@ -87,6 +88,10 @@
   }
 
   .prodact-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
 
     &:not(:nth-child(odd)) {
       margin-left: 0;

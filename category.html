@@ -7,7 +7,7 @@
   <title>category</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./scss/main.scss">
 </head>
@@ -169,9 +169,9 @@
         <div class="features-content__wrapper">
           <ul class="features-list">
             <li class="features-item">
-              <h3 class="features-item__title">
+              <a class="features-item__title">
                 Bakery
-              </h3>
+              </a>
               <ul class="drop-down__list">
                 <li class="drop-down__item">test</li>
                 <li class="drop-down__item">test</li>
@@ -191,9 +191,9 @@
               </ul>
             </li>
             <li class="features-item">
-              <h3 class="features-item__title">
+              <a class="features-item__title">
                 Meat and fish
-              </h3>
+              </a>
               <ul class="drop-down__list">
                 <li class="drop-down__item">test</li>
                 <li class="drop-down__item">test</li>
@@ -201,9 +201,9 @@
               </ul>
             </li>
             <li class="features-item">
-              <h3 class="features-item__title">
+              <a class="features-item__title">
                 Drinks
-              </h3>
+              </a>
               <ul class="drop-down__list">
                 <li class="drop-down__item">test</li>
                 <li class="drop-down__item">test</li>
@@ -211,9 +211,9 @@
               </ul>
             </li>
             <li class="features-item">
-              <h3 class="features-item__title">
+              <a class="features-item__title">
                 Kitchen
-              </h3>
+              </a>
               <ul class="drop-down__list">
                 <li class="drop-down__item">test</li>
                 <li class="drop-down__item">test</li>
@@ -221,9 +221,9 @@
               </ul>
             </li>
             <li class="features-item">
-              <h3 class="features-item__title">
+              <a class="features-item__title">
                 Special nutrition
-              </h3>
+              </a>
               <ul class="drop-down__list">
                 <li class="drop-down__item">test</li>
                 <li class="drop-down__item">test</li>
@@ -231,9 +231,9 @@
               </ul>
             </li>
             <li class="features-item">
-              <h3 class="features-item__title">
+              <a class="features-item__title">
                 Baby
-              </h3>
+              </a>
               <ul class="drop-down__list">
                 <li class="drop-down__item">test</li>
                 <li class="drop-down__item">test</li>
@@ -241,9 +241,9 @@
               </ul>
             </li>
             <li class="features-item">
-              <h3 class="features-item__title">
+              <a class="features-item__title">
                 Pharmacy
-              </h3>
+              </a>
               <ul class="drop-down__list">
                 <li class="drop-down__item">test</li>
                 <li class="drop-down__item">test</li>
@@ -284,38 +284,38 @@
           </ul>
         </div>
 
-        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="form" action="https://echo.htmlacademy.ru" method="GET">
               <div class="form__wrapper">
-                <label class="form__label" for="text">
-                  <input class="form__input input-left visually-hidden" type="radio" name="filtre" value="text" id="text" aria-label="filtre text">
+                <label class="form__label">
+                  <input class="form__input input-left visually-hidden" type="radio" name="filtre" value="text">
                   <span class="form__span">Filtre text</span>
                 </label>
 
-                <label class="form__label" for="filtre">
-                  <input class="form__input input-right visually-hidden" type="radio" name="filtre" value="text" id="filtre" aria-label="filtre text">
+                <label class="form__label">
+                  <input class="form__input input-right visually-hidden" type="radio" name="filtre" value="text">
                   <span class="form__span">Filtre text</span>
                 </label>
               </div>
 
               <div class="check-wrapper">
-                <label class="check-wrapper__label" for="check-one">
-                  <input class="check-wrapper__check visually-hidden" type="checkbox" name="filtre" id="check-one" aria-label="filtre">
+                <label class="check-wrapper__label">
+                  <input class="check-wrapper__check visually-hidden" type="checkbox" name="filtre">
                   <span class="check-wrapper__span">Filtre</span>
                   <span class="check-wrapper__span-nbm">Nbm</span>
                 </label>
               </div>
 
               <div class="check-wrapper">
-                <label class="check-wrapper__label" for="check-two">
-                  <input class="check-wrapper__check visually-hidden" type="checkbox" name="filtre" id="check-two" aria-label="filtre">
+                <label class="check-wrapper__label">
+                  <input class="check-wrapper__check visually-hidden" type="checkbox" name="filtre">
                   <span class="check-wrapper__span">Filtre</span>
                   <span class="check-wrapper__span-nbm">Nbm</span>
                 </label>
               </div>
 
               <div class="select">
-                <label class="select__label" for="check-select">
-                  <input class="select__input visually-hidden" type="checkbox" name="filtre" id="check-select">
+                <label class="select__label">
+                  <input class="select__input visually-hidden" type="checkbox" name="filtre">
                   <span class="select__span">Filtre</span>
                   <span class="select__number">12</span>
                 </label>
@@ -332,124 +332,187 @@
 
         <div class="applied">
           <p class="applied__text">Applied filtres:</p>
-          <p class="applied__green">Selected Filtre</p>
-          <p class="applied__green">Selected Filtre</p>
+          <button class="applied__green">Selected Filtre</button>
+          <button class="applied__green">Selected Filtre</button>
         </div>
       </div>
     </section>
 
-  <form action="https://echo.htmlacademy.ru" class="category-form" method="GET">
+
     <section class="categories">
       <div class="container">
         <div class="categories__wrapper">
-          <div class="categories__list">
-            <h2 class="categories__title">Categories</h2>
-            <ul class="categories__list">
-              <li class="categories__item">
-                <a class="categories__link" href="#">
-                  Category name
-                </a>
-              </li>
-              <li class="categories__item">
-                <a class="categories__link" href="#">
-                  Category name
-                </a>
-              </li>
-              <li class="categories__item">
-                <a class="categories__link" href="#">
-                  Category name
-                </a>
-              </li>
-              <li class="categories__item">
-                <a class="categories__link" href="#">
-                  Category name
-                </a>
-              </li>
-            </ul>
-          </div>
+        <form action="https://echo.htmlacademy.ru" class="category-form" method="GET">
+            <div class="categories__list">
+              <h2 class="categories__title">Categories</h2>
+              <ul class="categories__list">
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    Category name
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    Category name
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    Category name
+                  </a>
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    Category name
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-          <div class="filter">
-            <h3 class="filter__title">Brands</h3>
-            <ul class="filter__list">
-              <li class="filter__item">
-                <label class="filter__label" for="filter-one">
-                  <input class="filter__input visually-hidden" type="checkbox" name="filter" id="filter-one">
-                  <p class="filter__text">Filtre by brand item</p>
-                </label>
-              </li>
-              <li class="filter__item">
-                <label class="filter__label" for="filter-two">
-                  <input class="filter__input visually-hidden" type="checkbox" name="filter" id="filter-two">
-                  <p class="filter__text">Filtre by brand item</p>
-                </label>
-              </li>
-              <li class="filter__item">
-                <label class="filter__label" for="filter-three">
-                  <input class="filter__input visually-hidden" type="checkbox" name="filter" id="filter-three">
-                  <p class="filter__text">Filtre by brand item</p>
-                </label>
-              </li>
-              <li class="filter__item">
-                <label class="filter__label" for="filter-four">
-                  <input class="filter__input visually-hidden" type="checkbox" name="filter" id="filter-four">
-                  <p class="filter__text">Filtre by brand item</p>
-                </label>
-              </li>
-              <li class="filter__item">
-                <label class="filter__label" for="filter-five">
-                  <input class="filter__input visually-hidden" type="checkbox" name="filter" id="filter-five">
-                  <p class="filter__text">Filtre by brand item</p>
-                </label>
-              </li>
-            </ul>
-          </div>
+            <div class="filter">
+              <h3 class="filter__title">Brands</h3>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__input visually-hidden" type="checkbox" name="filter">
+                    <p class="filter__text">Filtre by brand item</p>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__input visually-hidden" type="checkbox" name="filter">
+                    <p class="filter__text">Filtre by brand item</p>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__input visually-hidden" type="checkbox" name="filter">
+                    <p class="filter__text">Filtre by brand item</p>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__input visually-hidden" type="checkbox" name="filter">
+                    <p class="filter__text">Filtre by brand item</p>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__input visually-hidden" type="checkbox" name="filter">
+                    <p class="filter__text">Filtre by brand item</p>
+                  </label>
+                </li>
+              </ul>
+            </div>
 
-          <div class="rating">
-            <h3 class="rating__title">Rating</h3>
-            <ul class="rating__list">
-              <li class="rating__item">
-                <label class="rating__label" for="star-one">
-                  <input class="rating__input visually-hidden" type="checkbox" name="star" id="star-one">
-                  <span class="rating__span">
-                    <img class="rating__img" src="./img/five-star.svg" alt="five star" width="88" height="16">
-                  </span>
-                </label>
-              </li>
+            <div class="rating">
+              <h3 class="rating__title">Rating</h3>
+              <ul class="rating__list">
+                <li class="rating__item">
+                  <label class="rating__label">
+                    <input class="rating__input visually-hidden" type="checkbox" name="star">
+                    <span class="rating__span">
+                      <img class="rating__img" src="./img/five-star.svg" alt="five star" width="88" height="16">
+                    </span>
+                  </label>
+                </li>
 
-              <li class="rating__item">
-                <label class="rating__label" for="star-two">
-                  <input class="rating__input visually-hidden" type="checkbox" name="star" id="star-two">
-                  <span class="rating__span">
-                    <img class="rating__img" src="./img/four-stars.svg" alt="five star" width="88" height="16">
-                  </span>
-                </label>
-              </li>
+                <li class="rating__item">
+                  <label class="rating__label">
+                    <input class="rating__input visually-hidden" type="checkbox" name="star">
+                    <span class="rating__span">
+                      <img class="rating__img" src="./img/four-stars.svg" alt="five star" width="88" height="16">
+                    </span>
+                  </label>
+                </li>
 
-              <li class="rating__item">
-                <label class="rating__label" for="star-three">
-                  <input class="rating__input visually-hidden" type="checkbox" name="star" id="star-three">
-                  <span class="rating__span">
-                    <img class="rating__img" src="./img/three-stars.svg" alt="five star" width="88" height="16">
-                  </span>
-                </label>
-              </li>
+                <li class="rating__item">
+                  <label class="rating__label">
+                    <input class="rating__input visually-hidden" type="checkbox" name="star">
+                    <span class="rating__span">
+                      <img class="rating__img" src="./img/three-stars.svg" alt="five star" width="88" height="16">
+                    </span>
+                  </label>
+                </li>
 
-              <li class="rating__item">
-                <label class="rating__label" for="star-four">
-                  <input class="rating__input visually-hidden" type="checkbox" name="star" id="star-four">
-                  <span class="rating__span">
-                    <img class="rating__img" src="./img/two-stars.svg" alt="five star" width="88" height="16">
-                  </span>
-                </label>
-              </li>
+                <li class="rating__item">
+                  <label class="rating__label">
+                    <input class="rating__input visually-hidden" type="checkbox" name="star">
+                    <span class="rating__span">
+                      <img class="rating__img" src="./img/two-stars.svg" alt="five star" width="88" height="16">
+                    </span>
+                  </label>
+                </li>
 
-              <li class="rating__item">
-                <label class="rating__label" for="star-five">
-                  <input class="rating__input visually-hidden" type="checkbox" name="star" id="star-five">
-                  <span class="rating__span">
-                    <img class="rating__img" src="./img/one-star.svg" alt="five star" width="88" height="16">
-                  </span>
+                <li class="rating__item">
+                  <label class="rating__label">
+                    <input class="rating__input visually-hidden" type="checkbox" name="star">
+                    <span class="rating__span">
+                      <img class="rating__img" src="./img/one-star.svg" alt="five star" width="88" height="16">
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="price">
+              <h3 class="price__title">Price</h3>
+              <img class="price__img" src="./img/price__img.svg" alt="price img" width="251" height="20">
+              <div class="price-wrapper">
+                <label class="price__label">
+                  Min
+                  <input class="price-wrapper__input" type="number" name="min_price" placeholder="0">
                 </label>
+
+                <label class="price__label label__max">
+                  Max
+                  <input class="price-wrapper__input" type="number" name="max_price" placeholder="000">
+                </label>
+              </div>
+              <button class="form-button__apply" type="submit">Apply</button>
+              <button class="form-button__reset" type="reset">Reset</button>
+            </div>
+        </form>
+
+          <div class="card">
+            <ul class="card__list">
+              <li class="card__item">
+                <img class="card__img" src="./img/image-light.svg" alt="picture product" width="268" height="280">
+
+                <div class="card__wrapper">
+                  <h2 class="card__title">Product title</h2>
+                  <p class="card__text">Space for a small product description</p>
+                  <div class="card__stars">
+                    <div class="card__stars-empty">
+                      <img src="./img/star-empty.svg" alt="" width="16" height="16">
+                      <img src="./img/star-empty.svg" alt="" width="16" height="16">
+                      <img src="./img/star-empty.svg" alt="" width="16" height="16">
+                      <img src="./img/star-empty.svg" alt="" width="16" height="16">
+                      <img src="./img/star-empty.svg" alt="" width="16" height="16">
+                    </div>
+
+                    <div class="card__stars-full">
+                      <img src="./img/star-full.svg" alt="" width="16" height="16">
+                      <img src="./img/star-full.svg" alt="" width="16" height="16">
+                      <img src="./img/star-full.svg" alt="" width="16" height="16">
+                      <img src="./img/star-full.svg" alt="" width="16" height="16">
+                      <img src="./img/star-full.svg" alt="" width="16" height="16">
+                    </div>
+                  </div>
+
+                  <table class="card__table">
+
+                  </table>
+                </div>
+
+                <div class="card__inner">
+                  <p class="cars__price">36.99 USD</p>
+                  <span class="card__span">48.56</span>
+                  <p class="card__free">Free Shipping</p>
+                  <p class="card__delivery">Delivery in 1 day</p>
+
+                  <a class="card__link" href="#">Product Detail</a>
+                  <button class="card__button" type="button">Add to wish list</button>
+                </div>
               </li>
             </ul>
           </div>
@@ -457,7 +520,7 @@
       </div>
     </section>
 
-  </form>
+
   </main>
 
   <footer class="site-footer">
