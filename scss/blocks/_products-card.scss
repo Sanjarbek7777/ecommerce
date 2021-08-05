@@ -1,5 +1,7 @@
 .card__list{
   @include list-unstyled;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__item{
@@ -8,7 +10,17 @@
   border: 1px solid #D1D1D1;
   border-radius: 12px;
   display: flex;
-  max-width: 869px;
+  align-items: center;
+  min-width: 869px;
+
+  &:not(:last-child){
+    margin-bottom: 32px;
+  }
+}
+
+.card__wrapper{
+  margin-left: 32px;
+  margin-right: 96px;
 }
 
 .card__title{
@@ -18,13 +30,181 @@
   font-size: 18px;
   line-height: 27px;
   color: #151515;
+  margin-bottom: 4px;
 }
 
 .card__text{
-  @include title-unstled;
+  @include title-unstyled;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   color: #575757;
+  margin-bottom: 10px;
 }
 
+.card__stars{
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.card__stars-full{
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  left: 0;
+  top: 0;
+}
+
+.card__full:not(:last-child){
+  margin-right: 5px;
+}
+
+.card__empty:not(:last-child){
+  margin-right: 5px;
+}
+
+.card__stars-empty{
+  display: flex;
+  align-items: center;
+}
+
+.card__inner{
+  display: flex;
+  flex-direction: column;
+}
+
+.card__price{
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  margin: 0;
+}
+
+.card__span{
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #A9A9A9;
+  margin: 0;
+}
+
+.card__free{
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.card__delivery{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.card__link{
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: #6A983C;
+  border: 2px solid #46760A;
+  border-radius: 12px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px 12px 16px;
+  margin-bottom: 12px;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-image: url(/img/card-link-right-vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 13px;
+  }
+}
+
+.card__button{
+  font-family: "Poppins";
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  background-color: #F5F5F5;
+  border-radius: 12px;
+  border: none;
+  padding: 7px 12px 7px 13px;
+
+  &::before{
+    content: "";
+    display: block;
+    width: 14px;
+    height: 12px;
+    background-image: url(/img/card-button-before.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 9px;
+  }
+}
+
+.card__table {
+  color: #A9A9A9;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+.card__td {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+
+.card__content-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+  padding-left: 22px;
+}
+
+.grocery {
+  padding-left: 60px;
+}
+
+.europe {
+  padding-left: 43px;
+}
+
+.card__content-span {
+  color: #6A983C;
+}
+
+.card__content-number {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #6A983C;
+  padding-left: 60px;
+}
