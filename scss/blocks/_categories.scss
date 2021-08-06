@@ -16,8 +16,14 @@
   @include list-unstyled;
 }
 
-.categories__item:not(:last-child){
-  margin-bottom: 12px;
+.categories__item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child){
+    margin-bottom: 12px;
+  }
 }
 
 .categories__link{
@@ -30,23 +36,22 @@
   display: flex;
   align-items: center;
 
-  &::after{
-    content: "077";
-    display: block;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-    color: #6A983C;
-    background-color: #F4F8EC;
-    border-radius: 12px;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-left: 130px;
-  }
 
   &:hover{
     opacity: 0.7;
   }
+}
+
+.categories__amount{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background-color: #F4F8EC;
+  border-radius: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 10px;
 }
 
 .filter{
@@ -90,17 +95,18 @@
     display: block;
     width: 20px;
     height: 20px;
+    background-image: url(/img/checkbox-vector.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
     border: 1.5px solid #D1D1D1;
     margin-right: 10px;
   }
 }
 
 .filter__input:checked ~ .filter__text::before{
-  border: none;
-  background-image: url(../../img/ic-actions-multi-success.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-color: #6A983C;
+  border-color: #46760A;
 }
 
 .rating{
@@ -134,15 +140,16 @@
     display: block;
     width: 20px;
     height: 20px;
+    background-image: url(/img/checkbox-vector.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
     border: 1.5px solid #D1D1D1;
     margin-right: 10px;
   }
 }
 
 .rating__input:checked ~ .rating__span::before{
-  border: none;
-  background-image: url(../../img/ic-actions-multi-success.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-color: #6A983C;
+  border-color: #46760A;
 }
