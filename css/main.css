@@ -2694,6 +2694,15 @@ img {
   margin-left: 10px;
 }
 
+.fruit-wrapper__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .fruit-wrapper__item:not(:last-child) {
   margin-right: 25px;
 }
@@ -2709,29 +2718,12 @@ img {
 }
 
 .link-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
 }
 
-.link-grid::before {
-  content: "";
-  display: block;
-  width: 14px;
-  height: 14px;
-  background-image: url(../../img/ic-layout-square-grid.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin-right: 5px;
-}
-
 .link-grid:hover {
+  cursor: pointer;
   opacity: 0.7;
 }
 
@@ -2759,25 +2751,14 @@ img {
 }
 
 .link-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #A9A9A9;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  color: #151515;
 }
 
-.link-list::before {
-  content: "";
-  display: block;
-  width: 14px;
-  height: 14px;
-  background-image: url(../../img/ic-layout-sections.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin-right: 5px;
+.link-list:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 @media only screen and (max-width: 663px) {
@@ -3564,46 +3545,24 @@ img {
   margin-right: 9px;
 }
 
-.card__table {
+.card__th {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
   color: #A9A9A9;
-  margin-right: 0;
-  margin-top: 10px;
+}
+
+.card__th:not(:last-child) {
+  padding-bottom: 12px;
 }
 
 .card__td {
-  margin: 0;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #A9A9A9;
-}
-
-.card__content-text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #A9A9A9;
-  padding-left: 22px;
-}
-
-.grocery {
-  padding-left: 60px;
-}
-
-.europe {
-  padding-left: 43px;
-}
-
-.card__content-span {
-  color: #6A983C;
-}
-
-.card__content-number {
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   color: #6A983C;
-  padding-left: 60px;
+  padding-left: 32px;
+  padding-bottom: 12px;
 }
 
 .more__show {

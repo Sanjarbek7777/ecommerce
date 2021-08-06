@@ -167,46 +167,23 @@
   }
 }
 
-.card__table {
-  color: #A9A9A9;
-  margin-right: 0;
-  margin-top: 10px;
-}
-
-.card__td {
-  margin: 0;
+.card__th{
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   color: #A9A9A9;
+
+  &:not(:last-child){
+    padding-bottom: 12px;
+  }
 }
 
-.card__content-text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #A9A9A9;
-  padding-left: 22px;
-}
-
-.grocery {
-  padding-left: 60px;
-}
-
-.europe {
-  padding-left: 43px;
-}
-
-.card__content-span {
-  color: #6A983C;
-}
-
-.card__content-number {
+.card__td{
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   color: #6A983C;
-  padding-left: 60px;
+  padding-left: 32px;
+  padding-bottom: 12px;
 }
-
 
