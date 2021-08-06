@@ -1,6 +1,7 @@
   .form{
     display: flex;
     align-items: center;
+    margin-right: 15px;
   }
 
   .form__wrapper{
@@ -15,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
   }
 
   .form__label{
@@ -65,6 +67,7 @@
     align-items: center;
     justify-content: space-between;
     margin-right: 16px;
+    margin-bottom: 10px;
   }
 
   .check-wrapper__span-nbm{
@@ -122,6 +125,7 @@
     background-color: #F9F9F9;
     border: 1px solid #D1D1D1;
     border-radius: 12px;
+    margin-bottom: 10px;
   }
 
   .select__label{
