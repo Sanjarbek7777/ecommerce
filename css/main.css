@@ -3565,6 +3565,19 @@ img {
   padding-bottom: 12px;
 }
 
+.card-lst__grid {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-lst__grid .card__item {
+  min-width: 268px;
+}
+
 .more__show {
   display: -webkit-box;
   display: -ms-flexbox;
