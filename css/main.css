@@ -3719,13 +3719,26 @@ img {
   }
 }
 
+@media only screen and (max-width: 875px) {
+  .card__list-grid .card__item {
+    width: calc(100% / 2 - 32px);
+    margin-left: 32px;
+    margin-bottom: 32px;
+  }
+}
+
 @media only screen and (max-width: 873px) {
   .card__item {
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .card__img {
+    margin-bottom: 20px;
   }
   .card__table {
     display: none;
@@ -3736,6 +3749,17 @@ img {
   .card__delivery {
     display: none;
   }
+  .card__wrapper {
+    position: absolute;
+    z-index: 99;
+    left: 50px;
+    bottom: 70px;
+    margin-left: 100px;
+  }
+  .card__inner {
+    margin-left: auto;
+    margin-right: 100px;
+  }
 }
 
 @media only screen and (max-width: 862px) {
@@ -3745,6 +3769,29 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .card__wrapper {
+    position: static;
+    margin-left: 130px;
+  }
+  .card__inner {
+    margin-right: auto;
+  }
+  .card__span {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .card__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card__text {
+    width: 190px;
   }
 }
 
