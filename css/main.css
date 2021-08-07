@@ -390,6 +390,7 @@ html {
 }
 
 body {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3829,19 +3830,19 @@ img {
 }
 
 .modal {
+  width: 100%;
   position: absolute;
   z-index: 99;
+  top: 150px;
+  left: 0;
   background-color: rgba(158, 157, 157, 0.7);
-  position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
-  -webkit-transform: translateY(-5100px);
-          transform: translateY(-5100px);
+  display: none;
 }
 
 .js-open-modal .modal {
-  -webkit-transform: translateY(-3900px);
-          transform: translateY(-3900px);
+  display: block;
 }
 
 .modal__content {
