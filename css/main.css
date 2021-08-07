@@ -3719,6 +3719,25 @@ img {
   }
 }
 
+@media only screen and (max-width: 873px) {
+  .card__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+  }
+  .card__table {
+    display: none;
+  }
+  .card__free {
+    display: none;
+  }
+  .card__delivery {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 862px) {
   .form {
     display: -webkit-box;

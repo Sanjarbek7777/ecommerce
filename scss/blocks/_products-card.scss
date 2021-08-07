@@ -313,6 +313,26 @@
   }
 }
 
+@media only screen and (max-width: 873px) {
+  .card__item{
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .card__table{
+    display: none;
+  }
+
+  .card__free{
+    display: none;
+  }
+
+  .card__delivery{
+    display: none;
+  }
+
+}
+
 @media only screen and (max-width: 862px) {
   .form{
     display: flex;
