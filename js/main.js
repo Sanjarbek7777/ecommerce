@@ -5,8 +5,8 @@ var elProductSection = document.querySelector(".card__list");
 var elListView = document.querySelector(".link-list");
 var elGridView = document.querySelector(".link-grid");
 
-var elSectionForms = document.querySelector(".forms");
-var elOpenModal = elSectionForms.querySelector(".button-karzinka");
+var elSectionForms = document.querySelector(".body");
+var elOpenModal = document.querySelector(".button-karzinka");
 
 
 
@@ -33,6 +33,7 @@ if(elListView){
 
 if(elOpenModal){
   elOpenModal.addEventListener("click", function(){
-    elSectionForms.classList.add("js-open-modal");
+    elSectionForms.classList.toggle("js-open-modal");
   });
 }
+

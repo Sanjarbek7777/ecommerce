@@ -1,15 +1,15 @@
 .modal{
   position: absolute;
   z-index: 99;
-  background-color: gray;
+  background-color: rgba(158, 157, 157, 0.7);
   position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
-  display: none;
+  transform: translateY(-5100px);
 }
 
 .js-open-modal .modal{
-  display: block;
+  transform: translateY(-3900px);
 }
 
 .modal__content{
